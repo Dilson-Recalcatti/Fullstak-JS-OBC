@@ -1,0 +1,79 @@
+/* Seletor universal: permite aplicar estilo em todos os elementos
+presente no codigo */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seletor de tag: escolher uma tag especifica do site e defina um
+estilo nela
+Se colocar uma virgula, voce consegue utilizar o mesmo style em outro
+elemento/tag */
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Seletor de elementos alinhados: permite pegar um elemento que esta
+dentro da tag, indiferente do nivel */
+nav a {
+    color: #27ae60;
+}
+
+/* Seletor de filhos: vai considerar somente elementos filhos, ou seja,
+diretamente apos a tag. */
+
+nav > a {
+    display: block;
+    color: #f5a623;
+    padding: 10px;
+}
+
+/* seletor de classe */
+
+.laranja {
+    color: #cc6c13;
+}
+
+.verde {
+    color: #27ae60;
+}
+
+/* Seletor de ID: ao informar um seletor id, vai estilizar um elemento
+especifico */
+
+#secao-principal {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Combinação de seletores */
+
+#secao-principal > * {
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Seletor de sequencia */
+input + input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2 + p {
+    padding: 30px;
+}
+
+/* Seletores de propriedade */
+input[name="email"] {
+    background-color: #f5a623;
+}
+input[type="password"] {
+    background-color: #27ae60;
+}
